@@ -7,3 +7,5 @@ while not stop:
     print('Product: ', product, 'Sold: ', sold, 'Price: ', price)
     anwser =input('Continue? (y/n): ')
     stop = anwser == 'n'
+
+    print('Product: ', product)
