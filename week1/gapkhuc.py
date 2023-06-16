@@ -1,0 +1,37 @@
+# draw a square
+
+import turtle as t
+
+# t.left(90)
+# t.forward(100)
+# t.right(90)
+# t.forward(100)
+# t.right(90)
+# t.forward(100)
+
+# t.left(90)
+# t.forward(100)
+# t.right(90)
+# t.forward(100)
+# t.right(90)
+# t.forward(100)
+# t.left(90)
+# t.forward(100)
+# t.left(90)
+# t.forward(100)
+t.pencolor('blue')
+t.pensize(5)
+t.left(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.left(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+t.right(90)
+t.forward(100)
+
+t.exitonclick()
