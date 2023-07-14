@@ -8,4 +8,3 @@ while not stop:
     anwser =input('Continue? (y/n): ')
     stop = anwser == 'n'
 
-    print('Product: ', product)
