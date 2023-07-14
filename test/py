@@ -1,0 +1,8 @@
+row = int(input("Nhập số hàng: "))
+
+for i in range(row, 0, -1):
+    for j in range(row - i):
+        print(" ", end="")
+    for k in range(i):
+        print("* ", end="")
+    print()
