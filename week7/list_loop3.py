@@ -7,4 +7,3 @@ for n in numbers:
     if n % 2 == 0:
         count += 1
 print(f'The number of even numbers: {count}')
-
