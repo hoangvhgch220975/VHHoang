@@ -1,19 +1,19 @@
-student = ['John', 'Peter', 'Mary', 'Jane', 'Tom', 'Jenny', 'Alice', 'Bob']
+book = ['John', 'Peter', 'Mary', 'Jane', 'Tom', 'Jenny', 'Alice', 'Bob']
 department = ['IT', 'GD', 'IT', 'Biz', 'Biz','GD', 'IT', 'GD']
 GPAs = [3.5, 3.0, 3.2, 3.6, 3.8, 3.9, 3.7, 3.4]   
 
 
-# #1.Enter student name, find student and print him/her GPA and department
+# #1.Enter book name, find book and print him/her GPA and department
 check = False
-studentName = input('Enter student name: ')
-for i in range(len(student)):
-    if student[i] == studentName:
+bookName = input('Enter book name: ')
+for i in range(len(book)):
+    if book[i] == bookName:
         check = True
-        print('Found student')
+        print('Found book')
         print('His/her GPA is: ', GPAs[i])
         print('He/ she is in: ', department[i])
 if check == False:
-    print('Student not found')
+    print('book not found')
 
 IT_average = []
 GD_average = []
@@ -30,20 +30,20 @@ for i in range(len(department)):
 for i in range(len(IT_average)):
     result += IT_average[i]
 ave = result / (len(IT_average))
-print (' The average of all students in IT is: ','%.2f'%ave)
+print (' The average of all books in IT is: ','%.2f'%ave)
 ave = 0
 result = 0
 
 for i in range(len(GD_average)):
     result += GD_average[i]
 ave = result / (len(GD_average))
-print (' The average of all students in IT is: ','%.2f'%ave)
+print (' The average of all books in IT is: ','%.2f'%ave)
 ave = 0
 result = 0
 
 for i in range(len(Biz_average)):
     result += Biz_average[i]
 ave = result / (len(Biz_average))
-print (' The average of all students in IT is: ','%.2f'%ave)
+print (' The average of all books in IT is: ','%.2f'%ave)
       
       

@@ -1,8 +1,54 @@
-row = int(input("Nhập số hàng: "))
+book_management_system = {}
 
-for i in range(row, 0, -1):
-    for j in range(row - i):
-        print(" ", end="")
-    for k in range(i):
-        print("* ", end="")
-    print()
+def display_menu():
+    print("************ Book Management System ************")
+    print("1. Add Book")
+    print("2. Sell Book")
+    print("3. Show Total Sales")
+    print("4. Exit")
+
+def add_book():
+    book_name = input("Enter the book name: ")
+    book_price = float(input("Enter the book price: "))
+    if book_name in book_management_system:
+        print("Book already exists in the system.")
+    else:
+        book_management_system[book_name] = book_price
+        print("Book added successfully.")
+def sell_book():
+    book_name = input("Enter the book name to sell: ")
+
+    if book_name in book_management_system:
+        total_sales = book_management_system[book_name]
+        del book_management_system[book_name]
+        print("Book sold successfully.")
+        return total_sales
+    else:
+        print("Book not found in the system.")
+        return 0
+def show_total_sales(total_sales):
+    print("Total Sales: $", total_sales)
+
+def book_management():
+    total_sales = 0
+    while True:
+        display_menu()
+        option = input("Enter your choice (1-4): ")
+
+        if option == "1":
+            add_book()
+        elif option == "2":
+            total_sales += sell_book()
+        elif option == "3":
+            show_total_sales(total_sales)
+        elif option == "4":
+            break
+        else:
+            print("Invalid choice. Please try again.")
+
+book_management()
+
+
+
+
+

@@ -34,7 +34,7 @@ def add_student(names, gpas):
     gpa = float(input('Enter student GPAs: '))
     names.append(name)
     gpas.append(gpa)
-    print(f'Student {name} added successfully')
+    print(f'student {name} added successfully')
 
 def delete_student(names,gpas):
     name = input('Enter student name: ')
@@ -42,19 +42,19 @@ def delete_student(names,gpas):
         if names[i] == name:
             name.pos(i)
             gpas.pos(i)
-            print(f'Student {name} deleted successfully')
+            print(f'student {name} deleted successfully')
             return
-    print(f'Student {name} not found')
+    print(f'student {name} not found')
 def edit_student(names,gpas):
     name = input('Enter student name: ')
     new_gpa = float(input('Enter new gpa: '))
     for i in range(len(names)):
         if names[i] == name:
             gpas[i] = new_gpa
-            print(f'Student {name} edited successfully')
-            print(f'Student {name} new gpa: {new_gpa}')
+            print(f'student {name} edited successfully')
+            print(f'student {name} new gpa: {new_gpa}')
             return
-        print('Student {name} not found')
+        print('student {name} not found')
 def search_student(names, gpas):
     search_gpa = float(input('Enter the GPA: '))
     same_gpa = []

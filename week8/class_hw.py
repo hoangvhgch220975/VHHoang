@@ -5,18 +5,18 @@
 # product     | sneaker
 # price       | 20
 #VAT          |2.00
-# #Total        |22.00
+#Total        |22.00
 
 
 
-# product = input('Enter product: ')
-# price = float(input('Enter price: '))
-# VAT = (price / 100)*10
-# total = price + VAT
-# print(f"{'Product':10}|{product:>10}")
-# print(f"{'Price':10}|{price:10}")
-# print(f"{'VAT':10}|{VAT:10.2f}")
-# print(f"{'Total':10}|{total:10.2f}")
+product = input('Enter product: ')
+price = float(input('Enter price: '))
+VAT = (price / 100)*10
+total = price + VAT
+print(f"{'Product':10}|{product:>10}")
+print(f"{'Price':10}|{price:10}")
+print(f"{'VAT':10}|{VAT:10.2f}")
+print(f"{'Total':10}|{total:10.2f}")
 
 
 
