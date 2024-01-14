@@ -28,12 +28,12 @@ count = int(input('How many guest here? '))
 for i in range(1, count+1):
     guest_list.append(input(f"Enter the name of guest {i}: "))
 offer = (input('Do you want remove any guest?(Yes/No) '))
-if offer == 'yes':
+if offer == 'yes' or 'Yes':
     guest_remove = str(input('Enter the name of guest you want to remove: '))
     if guest_remove not in guest_list: 
         print('No one will be able to remove')
     else:
         guest_list.remove(guest_remove)
         print('Your guest list is: ',guest_list)
-elif offer == 'no':   
+elif offer == 'no' or 'No':   
     print('Your guest list is: ', guest_list)
